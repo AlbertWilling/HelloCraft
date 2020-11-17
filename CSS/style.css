@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  src: url(Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-family: 'Source Sans Pro'
+}
+
+:root{
+  --color1: #3f4850;
+  --color2: #ffffff;
+  --color3: #D16666;
+  --color4: #439775;
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: grid;
+  grid-template-areas: "header"
+                       "content"
+                       "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 10rem;
+}
+
+header{
+  grid-area: header;
+  background-color: var(--color4);
+}
+
+.content{
+  grid-area: content;
+}
+
+.intro{
+  background-color: var(--color4);
+}
+
+.intro-content{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main{
+  background-color: var(--color2);
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer{
+  grid-area: footer;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.footer-content{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+  min-height: 100vh;
+  display:grid;
+  grid-template-areas: "header"
+                       "wrapper"
+                       "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 4rem 1fr 10rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--color2);
+  color: var(--color1);
+  font-size: 20px;
+  
+
+}
+
+header{
+  grid-area: header;
+  background: var(--color4);
+}
+
+.content{
+  grid-area: wrapper;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "top top top top"
+                       "left-up intro box right-up"
+                       "left-down main main left-down";
+  grid-template-columns: auto minmax(2fr, 800px) minmax(1fr, 400px) auto;                  
+  grid-template-rows: 5rem 20rem 1fr;
+}
+
+.intro{
+  grid-area: intro;
+}
+
+
+.box{
+  grid-area: box;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.box-content{
+  width: 400px;
+  height: 350px;
+  overflow: visible;
+  z-index: 100;
+  background-color: var(--color2);
+  color: var(--color1);
+  border-radius: 1rem;
+  box-shadow: 0 0rem 0.8rem rgb(0, 0, 0, 0.3)
+}
+
+.main{
+  grid-area: main;
+  background-color: var(--color2);
+}
+
+footer{
+  grid-area: footer;
+  background: var(--color1);
+  color: var(--color2);
+} */
