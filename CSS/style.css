@@ -22,6 +22,21 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-size: 2.1rem;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+
+}
+
 /* Main layout and styling */
 
 body{
@@ -32,7 +47,8 @@ body{
                        "content"
                        "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 1fr 10rem;
+  grid-template-rows: 4rem 1fr auto;
+  line-height: 1.5;
 }
 
 header{
@@ -66,20 +82,40 @@ header{
   background-color: var(--color2);
   max-width: 1200px;
   margin: auto;
+  padding: 1rem;
+  margin-top: 3rem;
 }
+
+.main ul{
+  list-style-image: url("/Pictures/start-here-symbolic.symbolic.png");
+  list-style-position: inside;
+}
+
 
 footer{
   grid-area: footer;
   background-color: var(--color1);
   color: var(--color2);
+  font-size: 0.85rem;
 }
 
 .footer-content{
+  padding: 1rem;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
+.footer-section{
+  padding: 1rem;
+  min-width: 300px;
+}
 
+.footer-section ul{
+  list-style-type: none;
+  margin-top: 1rem;
+}
 
 
 /* contact.html styling */
