@@ -17,6 +17,7 @@
   --color3: #D16666;
   --color4: #439775;
   --color5: #255a45;
+  --color6: #6f7d8a;
 }
 
 a{
@@ -179,9 +180,35 @@ footer{
 }
 
 .card img{
-  width: 70%;
   display: block;
   margin: auto;
+}
+
+.card span{
+  color: var(--color2);
+  font-size: 0.6rem;
+  display: block;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.card-text{
+  display: block;
+  text-align: center;
+  color: var(--color2);
+}
+
+.img-65{
+  width: 65%;
+}
+
+.img-100{
+  width: 100%;
+  border-radius: 10px;
+  border-top: 2px solid var(--color1);
+  border-left: 2px solid var(--color1);
+  border-right: 2px solid var(--color6);
+  border-bottom: 2px solid var(--color6);
 }
 
 /* contact.html styling */
