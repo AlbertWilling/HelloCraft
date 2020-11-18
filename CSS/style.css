@@ -7,7 +7,7 @@
 }
 
 @font-face{
-  src: url(Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  src: url(../Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
   font-family: 'Source Sans Pro'
 }
 
@@ -16,11 +16,22 @@
   --color2: #ffffff;
   --color3: #D16666;
   --color4: #439775;
+  --color5: #255a45;
 }
 
 a{
   text-decoration: none;
 }
+
+a:visited{
+  color: inherit;
+}
+
+a:hover{
+  color: var(--color3);
+}
+
+
 
 h1{
   font-size: 2.1rem;
@@ -47,14 +58,49 @@ body{
                        "content"
                        "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 1fr auto;
+  grid-template-rows: auto 1fr auto;
   line-height: 1.5;
 }
 
 header{
   grid-area: header;
   background-color: var(--color4);
+  color: var(--color2);
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
+
+.header-content{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.logo{
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
+}
+
+.logo img{
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+nav{
+  display: flex;
+  align-items: flex-end;
+}
+
+nav ul li{
+  display: inline;
+  padding-right: 1rem;
+}
+
 
 .content{
   grid-area: content;
@@ -84,11 +130,12 @@ header{
   margin: auto;
   padding: 1rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .main ul{
   list-style-image: url("/Pictures/start-here-symbolic.symbolic.png");
-  list-style-position: inside;
+  padding-left: 2rem;
 }
 
 
@@ -100,7 +147,7 @@ footer{
 }
 
 .footer-content{
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -117,6 +164,25 @@ footer{
   margin-top: 1rem;
 }
 
+.card{
+  background-color: var(--color5);
+  margin-right: 2rem;
+  width: 380px;
+  min-height: 280px;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.card-form{
+  background-color: var(--color2);
+}
+
+.card img{
+  width: 70%;
+  display: block;
+  margin: auto;
+}
 
 /* contact.html styling */
 
@@ -159,16 +225,7 @@ input:focus{
 }
 
 
-.card{
-  background-color: white;
-  margin-right: 2rem;
-  width: 380px;
-  min-height: 280px;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
-  
-}
+
 
 
 
