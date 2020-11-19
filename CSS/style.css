@@ -28,6 +28,10 @@ a{
   text-decoration: none;
 }
 
+a:link{
+  color: var(--color2);
+}
+
 a:visited{
   color: inherit;
 }
@@ -270,6 +274,10 @@ input:focus{
 
 .underline{
   text-decoration: underline;
+}
+
+.underline a:link{
+  color: var(--color1);
 }
 
 /* JavaScript classes for form validation */
