@@ -122,7 +122,7 @@ nav ul li{
   display: grid;
   grid-template-areas: "intro-text intro-box";
   grid-template-columns: minmax(400px, 2fr) 1fr;
-  grid-template-rows: 250px;
+  grid-template-rows: auto;
 }
 
 .intro-text{
@@ -133,6 +133,7 @@ nav ul li{
 
 .intro-box{
   grid-area: intro-box;
+  margin-bottom: -2rem;
 }
 
 .main{
