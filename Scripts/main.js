@@ -27,7 +27,7 @@ function validateForm(e){
   
   else{
   msg.className = 'msg-green';
-  msg.innerHTML = 'Sent successfully.' + '<br>' + name + ' was registered at: ' + email;
+  msg.innerHTML = 'Sent successfully.' + '<br>' + name + ' has registered ' + email + ' address.';
   document.querySelector('#form').reset();
   }  
 }

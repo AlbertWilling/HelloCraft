@@ -36,8 +36,6 @@ a:hover{
   color: var(--color3);
 }
 
-
-
 h1{
   font-size: 2.1rem;
 }
@@ -106,7 +104,6 @@ nav ul li{
   padding-right: 1rem;
 }
 
-
 .content{
   grid-area: content;
 }
@@ -142,7 +139,6 @@ nav ul li{
   list-style-image: url("/Pictures/start-here-symbolic.symbolic.png");
   padding-left: 2rem;
 }
-
 
 footer{
   grid-area: footer;
@@ -273,101 +269,22 @@ input:focus{
 
 }
 
+@media (max-width: 800px) {
+  .intro-content{
+    margin: auto;
+    display: grid;
+    grid-template-areas: "intro-text"
+                         "intro-box";
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto;
+  } 
 
+  .intro-box{
+    margin: auto;
+    margin-bottom: 30px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body{
-  min-height: 100vh;
-  display:grid;
-  grid-template-areas: "header"
-                       "wrapper"
-                       "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 4rem 1fr 10rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: var(--color2);
-  color: var(--color1);
-  font-size: 20px;
-  
-
+  .card{
+    margin-right: 0;
+  }
 }
-
-header{
-  grid-area: header;
-  background: var(--color4);
-}
-
-.content{
-  grid-area: wrapper;
-  width: 100%;
-  max-width: 1200px;
-  min-height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-areas: "top top top top"
-                       "left-up intro box right-up"
-                       "left-down main main left-down";
-  grid-template-columns: auto minmax(2fr, 800px) minmax(1fr, 400px) auto;                  
-  grid-template-rows: 5rem 20rem 1fr;
-}
-
-.intro{
-  grid-area: intro;
-}
-
-
-.box{
-  grid-area: box;
-  padding-right: 3rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 1rem;
-}
-
-.box-content{
-  width: 400px;
-  height: 350px;
-  overflow: visible;
-  z-index: 100;
-  background-color: var(--color2);
-  color: var(--color1);
-  border-radius: 1rem;
-  box-shadow: 0 0rem 0.8rem rgb(0, 0, 0, 0.3)
-}
-
-.main{
-  grid-area: main;
-  background-color: var(--color2);
-}
-
-footer{
-  grid-area: footer;
-  background: var(--color1);
-  color: var(--color2);
-} */
