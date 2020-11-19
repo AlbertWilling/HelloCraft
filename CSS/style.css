@@ -18,6 +18,10 @@
   --color4: #439775;
   --color5: #255a45;
   --color6: #6f7d8a;
+  --color-success: rgb(22, 90, 22);
+  --color-bg-success: rgb(171, 212, 171);
+  --color-wrong: rgb(168, 24, 24);
+  --color-bg-wrong: rgb(228, 185, 185);
 }
 
 a{
@@ -251,6 +255,23 @@ input:focus{
   font-weight: 700;
 }
 
+/* JavaScript classes for form validation */
+
+.msg-red{
+  color: var(--color-wrong);
+  width: 100%;
+  background-color: var(--color-bg-wrong);
+  padding: 0.5rem 1rem;
+
+}
+
+.msg-green{
+  color:  var(--color-success);
+  width: 100%;
+  background-color: var(--color-bg-success);
+  padding: 0.5rem 1rem;
+
+}
 
 
 
