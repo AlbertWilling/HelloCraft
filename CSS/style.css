@@ -273,11 +273,8 @@ input:focus{
   font-weight: 700;
 }
 
-.underline{
+.main a{
   text-decoration: underline;
-}
-
-.underline a:link{
   color: var(--color1);
 }
 
