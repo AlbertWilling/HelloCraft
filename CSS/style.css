@@ -145,7 +145,7 @@ nav ul li{
 }
 
 .main ul{
-  list-style-image: url("/Pictures/start-here-symbolic.symbolic.png");
+  list-style-image: url("../Pictures/start-here-symbolic.symbolic.png");
   padding-left: 2rem;
   padding-top: 1rem;
 }
